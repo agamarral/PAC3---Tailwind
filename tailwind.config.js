@@ -1,23 +1,21 @@
 module.exports = {
   important: true,
-  /*   purge: [
-      './src/*.html',
-      './src/assets/styles/main.css'
-  
-    ], */
+  purge: [
+    './src/*.html',
+    './src/assets/styles/main.css'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screens: {
-      'tablet': '421px',
-      'laptop': '980px',
-    },
-    fontFamily: {
-      'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'],
-      'serif': ['Baskerville', 'Georgia', 'serif'],
-      'mono': ['"Courier Prime"', 'monospace'],
-    },
-
     extend: {
+      screens: {
+        'tablet': '421px',
+        'laptop': '980px',
+      },
+      fontFamily: {
+        'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'],
+        'serif': ['Baskerville', 'Georgia', 'serif'],
+        'mono': ['"Courier Prime"', 'monospace'],
+      },
       colors: {
         red: {
           border: '#d13c08',
