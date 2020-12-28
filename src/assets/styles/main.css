@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-banner-picture-narrow {
     background-image: linear-gradient(to right, rgba(129, 32, 97, 0.6), rgba(231, 93, 24, 0.8)), url("../../assets/images/vilamajor.jpg");
     background-position: 0;
@@ -72,15 +73,19 @@
     .laptop-menu-item {
         @apply px-3 py-2 flex items-center text-grey-medium active:font-bold;
     }
+
     .laptop-menu-item.active {
         @apply font-bold;
     }
+
     .mobile-menu-item {
         @apply px-3 py-2 flex items-center hover:text-white;
     }
+
     .mobile-menu-item.active {
         @apply font-bold;
     }
+    
     .blockquote {
         @apply font-serif text-3xl italic text-green-blockquote text-opacity-80 inline text-blockquote my-4;
     }
