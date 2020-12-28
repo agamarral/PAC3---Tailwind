@@ -1,0 +1,79 @@
+/**
+ * Import variables
+ */
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-index-picture {
+    background-image: url("../../assets/images/antoine-julien-XHobt5FaqTo-unsplash-1260.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-banner-picture {
+    background-image: url("../../assets/images/vilamajor.jpg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.text-blockquote {
+    box-shadow: 0 -6px 0 rgba(#6b8e23, 0.2);
+    line-height: 46px!important;
+    text-shadow: 0 1px 1px rgba(var(--white), 0.5);
+}
+
+
+
+@layer components {
+    .card-title {
+        @apply text-center my-4 pb-5 text-white text-xl italic font-serif;
+    }
+
+    .box {
+        @apply bg-green-light flex flex-col items-center justify-center w-5/6 h-72 text-lg font-serif italic rounded-lg mt-8 laptop:mt-0 laptop:w-full;
+    }
+
+    .hamburger-btn {
+        @apply inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-grey-medium focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white;
+    }
+
+    .mobile-menu {
+        @apply bg-grey-medium rounded-lg;
+    }
+
+    .close-menu-btn {
+        @apply inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white;
+    }
+
+    .laptop-menu-item {
+        @apply px-3 py-2 flex items-center text-grey-medium;
+    }
+
+    .mobile-menu-item {
+        @apply px-3 py-2 flex items-center hover:text-white;
+    }
+
+    .blockquote {
+        @apply font-serif text-3xl italic text-green-blockquote text-opacity-80 inline text-blockquote my-4;
+    }
+}
+/**
+ * Do NOT include anything else in this file!
+ */

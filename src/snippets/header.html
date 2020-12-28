@@ -1,0 +1,55 @@
+<div class="header bg-grey-lightest flex items-center justify-around pt-8 laptop:justify-between laptop:px-24">
+    <div>
+        <a href="index.html">
+            <img class="h-16 tablet:h-32" src="./assets/images/logo_cello.png"
+                alt="Imatge d'un cello amb el text Shubertíada a Vilamajor" />
+        </a>
+    </div>
+
+    <button id="hamburgerBtnHeader" class="laptop:hidden hamburger-btn" aria-expanded="false">
+        <!-- Icon when menu is closed. -->
+
+        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+    </button>
+    <nav class="hidden laptop:flex laptop:content-end laptop:justify-around">
+        <ul class="flex flex-row list-none self-end">
+
+            <li class="mobile-menu-item">
+                <a href="./artists.html" class="laptop-menu-item {{ artist_active }}">Els
+                    artistes</a>
+            </li>
+
+            <li class="mobile-menu-item">
+                <a href="./history.html" class="laptop-menu-item {{ history_active }}">El
+                    festival</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hidden mobile-menu mt-8" id="mobileMenuHeader">
+        <button id="closeMenuBtnHeader"
+            class="inline-flex items-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-grey-medium focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-expanded="false">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="flex flex-col text-grey-light">
+            <!-- Icon when menu is closed. -->
+            <li class="nav-item">
+                <a href="./artists.html" class="mobile-menu-item {{ artist_active }}">Els
+                    artistes</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./history.html" class="mobile-menu-item{{ history_active }}">El
+                    festival</a>
+            </li>
+        </ul>
+    </div>
+
+</div>

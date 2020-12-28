@@ -1,0 +1,83 @@
+<div class="footer h-40 bg-grey-lightest flex items-center justify-around relative pb-8 laptop:px-24">
+    <a href="index.html">
+        <img class="h-16 pl:5 tablet:h-32" src="./assets/images/logo_cello.png"
+            alt="Imatge d'un cello amb el text Shubertíada a Vilamajor" />
+    </a>
+
+
+    <button id="hamburgerBtnFooter" class="laptop:hidden hamburger-btn" aria-expanded="false">
+        <!-- Icon when menu is closed. -->
+
+        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+    </button>
+    <nav class="hidden laptop:flex laptop:flex-grow laptop:items-center laptop:justify-around">
+        <ul class="flex flex-row laptop:flex-row list-none ">
+
+            <li class="nav-item">
+                <a href="./index.html" class="laptop-menu-item">Shubertíada
+                    2021</a>
+            </li>
+            <li class="nav-item">
+                <a href="./artists.html" class="laptop-menu-item">Els
+                    artistes</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./history.html" class="laptop-menu-item">El
+                    festival</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hidden mobile-menu absolute bottom-5" id="mobileMenuFooter">
+        <button id="closeMenuBtnFooter" class="close-menu-button text-grey-light hover:text-white hover:bg-grey-medium"
+            aria-expanded="false">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="flex flex-col text-grey-light">
+            <!-- Icon when menu is closed. -->
+
+            <li class="nav-item ">
+                <a href="./index.html" class="mobile-menu-item">Shubertíada
+                    2021</a>
+            </li>
+            <li class="nav-item">
+                <a href="./artists.html" class="mobile-menu-item">Els
+                    artistes</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./history.html" class="mobile-menu-item">El
+                    festival</a>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="flex lg:flex-grow items-center">
+        <ul class="flex flex-row lg:flex-row list-none ml-auto mx-10">
+            <li class="nav-item">
+                <a href="" class="laptop-menu-item"><i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="laptop-menu-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="laptop-menu-item"><i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</div>
+
+<script src="./assets/scripts/main.js"></script>
+<script src="https://use.fontawesome.com/d88ec466bf.js"></script>
