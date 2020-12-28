@@ -2,7 +2,6 @@ module.exports = {
   important: true,
   purge: [
     './src/*.html',
-    './src/scripts/*.js',
     './src/assets/styles/main.css'
 
   ],
