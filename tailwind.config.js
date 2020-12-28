@@ -66,9 +66,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      fontWeight: ['active']
-    },
+    fontWeight: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [],
 }
