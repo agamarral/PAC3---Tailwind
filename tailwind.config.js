@@ -2,7 +2,6 @@ module.exports = {
   important: true,
   purge: [
     './src/*.html',
-    './src/assets/snippets/*.html',
     './src/scripts/*.js',
     './src/assets/styles/main.css'
 
@@ -67,7 +66,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['active']
+    },
   },
   plugins: [],
 }
